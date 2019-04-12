@@ -1,0 +1,70 @@
+{
+  "groups": [
+    {
+      "name": "project",
+      "type": "com.linln.common.config.properties.ProjectProperties",
+      "sourceType": "com.linln.common.config.properties.ProjectProperties"
+    },
+    {
+      "name": "project.xxs",
+      "type": "com.linln.common.config.properties.ProjectProperties$Xxs",
+      "sourceType": "com.linln.common.config.properties.ProjectProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "project.captcha-open",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.linln.common.config.properties.ProjectProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "project.file-upload-path",
+      "type": "java.lang.String",
+      "sourceType": "com.linln.common.config.properties.ProjectProperties"
+    },
+    {
+      "name": "project.global-session-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.linln.common.config.properties.ProjectProperties",
+      "defaultValue": 1800
+    },
+    {
+      "name": "project.remember-me-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.linln.common.config.properties.ProjectProperties",
+      "defaultValue": 7
+    },
+    {
+      "name": "project.session-validation-interval",
+      "type": "java.lang.Integer",
+      "sourceType": "com.linln.common.config.properties.ProjectProperties",
+      "defaultValue": 900
+    },
+    {
+      "name": "project.static-path-pattern",
+      "type": "java.lang.String",
+      "sourceType": "com.linln.common.config.properties.ProjectProperties",
+      "defaultValue": "\/upload\/**"
+    },
+    {
+      "name": "project.xxs.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.linln.common.config.properties.ProjectProperties$Xxs",
+      "defaultValue": true
+    },
+    {
+      "name": "project.xxs.excludes",
+      "type": "java.lang.String",
+      "sourceType": "com.linln.common.config.properties.ProjectProperties$Xxs",
+      "defaultValue": "\/favicon.ico,\/img\/*,\/js\/*,\/css\/*,\/lib\/*"
+    },
+    {
+      "name": "project.xxs.url-patterns",
+      "type": "java.lang.String",
+      "sourceType": "com.linln.common.config.properties.ProjectProperties$Xxs",
+      "defaultValue": "\/*"
+    }
+  ],
+  "hints": []
+}
