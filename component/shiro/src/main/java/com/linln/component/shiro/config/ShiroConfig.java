@@ -48,6 +48,7 @@ public class ShiroConfig {
          */
         LinkedHashMap<String, String> filterMap = new LinkedHashMap<>();
         filterMap.put("/", "anon");
+        filterMap.put("/api/**", "anon");
         filterMap.put("/index", "anon");
         filterMap.put("/login", "anon");
         filterMap.put("/logout", "anon");
@@ -59,6 +60,7 @@ public class ShiroConfig {
         filterMap.put("/lib/**", "anon");
         filterMap.put("/favicon.ico", "anon");
         filterMap.put("/**", "userAuth");
+
 
         // 设置过滤规则
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterMap);
