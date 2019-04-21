@@ -13,6 +13,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+ /**
+  * @ClassName:      ActionLogController
+  * @Description:    日志业务类
+  * @Author:         ChenQi
+  * @CreateDate:     2019/4/21 13:37
+  */
 @Controller
 @RequestMapping("/system/actionLog")
 public class ActionLogController {
@@ -20,9 +26,14 @@ public class ActionLogController {
     @Autowired
     private ActionLogService actionLogService;
 
-    /**
-     * 列表页面
-     */
+     /**
+      *@MethodName:  index
+      *@Description: 列表页面
+      *@Param: [model, actionLog]
+      *@Return: java.lang.String
+      *@Author: ChenQi
+      *@CreateDate: 2019/4/21 13:38
+      */
     @GetMapping("/index")
     @RequiresPermissions("system:actionLog:index")
     public String index(Model model, ActionLog actionLog){
